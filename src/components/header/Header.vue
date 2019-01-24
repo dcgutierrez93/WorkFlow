@@ -1,10 +1,19 @@
 <template lang="html">
-  <header>
-    <nav>
+  <!-- <header>
+    <nav class="navbar shadow-sm">
+      <ol>
+        <li></li>
+      </ol>
 
+      <span class="navbar-text">
+
+      </span>
     </nav>
-  </header>
+  </header> -->
 </template>
 
 <style lang="css" scoped>
+nav {
+  background-color: #fff;
+}
 </style>

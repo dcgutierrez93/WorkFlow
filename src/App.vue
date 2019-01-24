@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <router-view></router-view>
     <Sidenav />
   </div>
 </template>
@@ -8,12 +9,10 @@
 <script>
 import Header from './components/header/Header.vue'
 import Sidenav from './components/header/Sidenav.vue'
-import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'app',
   components: {
-    Dashboard,
     Sidenav,
     Header
   }

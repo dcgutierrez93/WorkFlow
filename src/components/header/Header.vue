@@ -1,5 +1,5 @@
 <template lang="html">
-  <!-- <header>
+  <div>
     <nav class="navbar shadow-sm">
       <ol>
         <li></li>
@@ -9,11 +9,13 @@
 
       </span>
     </nav>
-  </header> -->
+  </div>
+
 </template>
 
 <style lang="css" scoped>
 nav {
+  height: 4rem;
   background-color: #fff;
 }
 </style>

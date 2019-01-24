@@ -53,6 +53,10 @@
     }
 </script>
 
-<style lang="css" scoped>
-
+<style lang="css">
+.vsm-list {
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 4rem);
+}
 </style>

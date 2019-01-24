@@ -1,7 +1,9 @@
 import VueRouter from 'vue-router';
 import Dashboard from './components/Dashboard.vue'
+import Login from './components/auth/Login.vue'
+import Register from './components/auth/Register.vue'
 
-// Vue.use(Router)
+//Vue.use(Router)
 
 const router = new VueRouter({
   mode: 'history',
@@ -11,6 +13,16 @@ const router = new VueRouter({
       name: 'Dashboard',
       component: Dashboard
     },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    }
   ]
 });
 

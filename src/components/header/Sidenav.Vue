@@ -5,6 +5,8 @@
 
 
   <script>
+  import NewFolder from '../NewFolder.vue'
+
     export default {
         data() {
             return {
@@ -33,6 +35,7 @@
                     {
                         title: 'New Folder',
                         icon: 'fa fa-folder-plus',
+                        component: 'NewFolder'
                         // child: [
                         //     {
                         //         href: '/charts/sublink',
@@ -43,20 +46,33 @@
                     {
                       title: 'New File',
                       icon: 'fa fa-file-upload',
-                    }
+                    },
+                    {
+                      title: 'Login',
+                      href: '/login',
+                      icon: 'fa fa-sign-in-alt'
+                    },
+                    {
+                      title: 'Register',
+                      href: '/register',
+                      icon: 'fa fa-user-plus'
+                    },
                 ],
                 collapsed: false,
                 themes: ['', 'white-theme'],
                 selectedTheme: 'white-theme'
             }
-        }
+        },
     }
 </script>
 
 <style lang="css">
-.vsm-list {
+.collapse-btn {
+  background-color: #4285f4;
+}
+/* .vsm-list {
   position: sticky;
   top: 50px;
   height: calc(100vh - 4rem);
-}
+} */
 </style>

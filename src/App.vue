@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <Header />
+    <!-- <Header /> -->
     <router-view></router-view>
     <Sidenav />
   </div>
 </template>
 
 <script>
-import Header from './components/header/Header.vue'
+// import Header from './components/header/Header.vue'
 import Sidenav from './components/header/Sidenav.vue'
 
 export default {
   name: 'app',
   components: {
-    Sidenav,
-    Header
+    Sidenav
   }
 }
 </script>

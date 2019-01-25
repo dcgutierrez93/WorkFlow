@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <!-- <div>
     <nav class="navbar shadow-sm">
       <ol>
         <li></li>
@@ -9,7 +9,7 @@
 
       </span>
     </nav>
-  </div>
+  </div> -->
 
 </template>
 

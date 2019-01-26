@@ -1,4 +1,5 @@
 <template lang="html">
+
   <h1>The Home Component</h1>
 </template>
 

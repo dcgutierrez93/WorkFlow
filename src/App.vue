@@ -1,27 +1,42 @@
+<style lang="css" scoped>
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+</style>
+
 <template>
-  <div id="app">
-    <!-- <Header /> -->
-    <router-view></router-view>
-    <Sidenav />
-  </div>
+
+<v-app>
+    <!-- <v-navigation-drawer app> -->
+      <Header></Header>
+    <!-- </v-navigation-drawer> -->
+    <!-- <v-toolbar app></v-toolbar> -->
+    <v-content>
+        <v-container fluid>
+            <router-view></router-view>
+        </v-container>
+    </v-content>
+    <!-- <v-footer app></v-footer> -->
+</v-app>
+
 </template>
 
 <script>
-// import Header from './components/header/Header.vue'
-import Sidenav from './components/header/Sidenav.vue'
+
+import Header from './components/header/Header.vue'
 
 export default {
-  name: 'app',
-  components: {
-    Sidenav
-  }
+    name: 'App',
+    components: {
+        Header
+    },
+    data() {
+        return {
+            //
+        }
+    }
 }
-</script>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-}
-</style>
+</script>

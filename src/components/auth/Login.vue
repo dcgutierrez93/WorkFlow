@@ -1,13 +1,13 @@
-<style lang="css" scoped>
+<!-- /* <style lang="css" scoped>
 
 .card {
   width: 70%;
   padding: 30px 60px;
 }
 
-</style>
+</style> -->
 
-<template lang="html">
+<!-- <template lang="html">
 
 <div id="form">
   <div class="container">
@@ -31,17 +31,17 @@
   </div>
 </div>
 
-</template>
+</template> -->
 
-<script>
-
-export default {
-  data() {
-    return {
-      email: '',
-      password: ''
-    }
-  }
-}
-
-</script>
+// <script>
+//
+// export default {
+//   data() {
+//     return {
+//       email: '',
+//       password: ''
+//     }
+//   }
+// }
+//
+// </script>

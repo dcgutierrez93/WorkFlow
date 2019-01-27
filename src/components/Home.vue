@@ -1,6 +1,7 @@
 <template lang="html">
-
-  <h1>The Home Component</h1>
+  <div id="home">
+    <h1>The Home Component</h1>
+  </div>
 </template>
 
 <script>

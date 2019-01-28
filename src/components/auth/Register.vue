@@ -47,7 +47,7 @@ export default {
         confirmPassword: this.confirmPassword
       }
       console.log(formData)
-      axios.post('https://workflow-7c092.firebaseio.com/users.json', formData)
+      axios.post('/users.json', formData)
         .then(res => console.log(res))
         .catch(error => console.log(error))
     }

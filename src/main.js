@@ -11,15 +11,16 @@ import './registerServiceWorker'
 // Setup Router
 import VueRouter from 'vue-router'
 
-
-Vue.prototype.$http  =  axios
-const  accessToken  =  localStorage.getItem('access_token')
-
-if (accessToken) {
-    Vue.prototype.$http.defaults.headers.common['Authorization'] =  accessToken
-}
-
-Vue.config.productionTip = false
+axios.defaults.baseURL = 'https://workflow-7c092.firebaseio.com'
+axios.defaults.headers.common['Authorization'] = 'fasdaf'
+// Vue.prototype.$http  =  axios
+// const  accessToken  =  localStorage.getItem('access_token')
+//
+// if (accessToken) {
+//     Vue.prototype.$http.defaults.headers.common['Authorization'] =  accessToken
+// }
+//
+// Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 

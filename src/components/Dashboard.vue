@@ -15,7 +15,7 @@ export default {
     }
   },
   created() {
-    axios.get('https://workflow-7c092.firebaseio.com/users.json')
+    axios.get('/users.json')
       .then(res => {
         const data = res.data
         const users = []

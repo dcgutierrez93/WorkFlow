@@ -14,10 +14,11 @@ import Home from './components/Home.vue'
 //   scope: 'openid profile email'
 // })
 
-// Vue.use(Router)
+Vue.use(VueRouter)
 
-const router = new VueRouter({
+export default new VueRouter({
   mode: 'history',
+  base:  process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -41,5 +42,3 @@ const router = new VueRouter({
     }
   ]
 });
-
-export default router;

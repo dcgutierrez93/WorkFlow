@@ -123,6 +123,7 @@
 </style>
 <script>
 export default {
+  name: 'Header',
   data () {
     return {
       drawer: true,

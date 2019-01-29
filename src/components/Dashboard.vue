@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="dashboard">
     <h1>Dashboard</h1>
-    <p>Welcome {{ email }}</p>
+    <p v-if="email">Welcome {{ email }}</p>
   </div>
 </template>
 

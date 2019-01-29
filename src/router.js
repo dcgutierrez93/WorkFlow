@@ -22,6 +22,7 @@ export default new VueRouter({
       path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard,
+      // TODO: Uncomment for Dashboard Security
       beforeEnter(to, from, next) {
         if(store.state.idToken) {
           next()

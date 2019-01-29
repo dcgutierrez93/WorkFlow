@@ -15,8 +15,8 @@ html {
         <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn href="/login" flat v-if="!auth">Login</v-btn>
+          <v-btn href="/register" flat v-if="!auth">Register</v-btn>
           <v-btn @click="onLogout" v-if="auth" flat>Logout</v-btn>
-
         </v-toolbar-items>
       </v-toolbar>
       <v-content>
@@ -46,7 +46,13 @@ export default {
       onLogout() {
         this.$store.dispatch('logout')
       }
+    },
+    data() {
+      return {
+
+      }
     }
+
 }
 
 </script>

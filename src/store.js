@@ -27,7 +27,7 @@ export default new Vuex.Store({
   },
   actions: {
     signup({commit, dispatch}, authData) {
-      axios.post('/signupNewUser?key=AIzaSyA_HmANKDD6Vn-mA7OpTk0oXR95Us841Z4', {
+      axios.post(process.env.VUE_APP_SECRET, {
         email: authData.email,
         password: authData.password,
         returnSecureToken: true
@@ -43,7 +43,7 @@ export default new Vuex.Store({
         .catch(error => console.log(error))
     },
     login({commit}, authData) {
-      axios.post('/verifyPassword?key=AIzaSyA_HmANKDD6Vn-mA7OpTk0oXR95Us841Z4', {
+      axios.post(VUE_APP_VERIFYPASSWORD, {
         email: authData.email,
         password: authData.password,
         returnSecureToken: true

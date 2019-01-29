@@ -47,7 +47,8 @@
            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
          </v-list-tile-content>
        </v-list-tile>
-       <v-list-group sub-group no-action v-if="auth">
+       <!-- <v-list-group sub-group no-action v-if="auth"> -->
+          <v-list-group sub-group no-action>
            <v-list-tile slot="activator">
                <v-list-tile-title>Actions</v-list-tile-title>
            </v-list-tile>
@@ -84,10 +85,10 @@ export default {
         // { title: 'New File', icon: 'cloud_upload' }
       ],
       cruds: [
-        ['Create', 'add'],
-        ['Read', 'insert_drive_file'],
-        ['Update', 'update'],
-        ['Delete', 'delete']
+        ['New Folder', 'add'],
+        ['New File', 'insert_drive_file'] //,
+        // ['Update', 'update'],
+        // ['Delete', 'delete']
       ],
       mini: true,
       right: null

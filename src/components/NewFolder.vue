@@ -1,4 +1,17 @@
 <template lang="html">
+  <div class="">
+
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css" scoped>
+</style>
+<!-- <template lang="html">
   <modal name="error-modal"
        :classes="['v--modal', 'error-modal', hasBugs && 'has-bugs']"
        :pivot-y="0.2"
@@ -80,4 +93,4 @@ export default {
     transition: opacity 0.25s;
   }
 }
-</style>
+</style> -->

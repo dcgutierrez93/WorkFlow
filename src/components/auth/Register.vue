@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import axiosInstance from '../../axios-auth';
 
 export default {
   data() {
@@ -47,9 +46,7 @@ export default {
         confirmPassword: this.confirmPassword
       }
       console.log(formData)
-      axios.post('/users.json', formData)
-        .then(res => console.log(res))
-        .catch(error => console.log(error))
+      this.$store.dispatch('signup', formData)
     }
   }
 }

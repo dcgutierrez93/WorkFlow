@@ -43,7 +43,7 @@ export default new Vuex.Store({
         .catch(error => console.log(error))
     },
     login({commit}, authData) {
-      axios.post(VUE_APP_VERIFYPASSWORD, {
+      axios.post(process.env.VUE_APP_VERIFYPASSWORD, {
         email: authData.email,
         password: authData.password,
         returnSecureToken: true

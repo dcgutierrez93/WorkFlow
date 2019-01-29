@@ -11,9 +11,9 @@ html {
 <!-- <div id="app"> -->
   <v-app>
       <Header />
-      <v-toolbar color="cyan" dark fixed app>
+      <v-toolbar color="white" fixed app>
         <v-spacer></v-spacer>
-        <v-toolbar-items>
+        <v-toolbar-items class="text-black">
           <v-btn href="/login" flat v-if="!auth">Login</v-btn>
           <v-btn href="/register" flat v-if="!auth">Register</v-btn>
           <v-btn @click="onLogout" v-if="auth" flat>Logout</v-btn>

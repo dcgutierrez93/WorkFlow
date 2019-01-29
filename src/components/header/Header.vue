@@ -47,19 +47,24 @@
            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
          </v-list-tile-content>
        </v-list-tile>
-       <!-- <v-list-group sub-group no-action v-if="auth"> -->
-          <v-list-group sub-group no-action>
-           <v-list-tile slot="activator">
-               <v-list-tile-title>Actions</v-list-tile-title>
-           </v-list-tile>
 
-           <v-list-tile v-for="(crud, i) in cruds" :key="i" @click="">
-               <v-list-tile-title v-text="crud[0]"></v-list-tile-title>
-               <v-list-tile-action>
-                   <v-icon v-text="crud[1]"></v-icon>
-               </v-list-tile-action>
-           </v-list-tile>
-       </v-list-group>
+       <v-divider></v-divider>
+
+       <v-list-tile
+         v-for="userAction in userActions"
+         :key="userAction.title"
+
+
+       >
+         <v-list-tile-action>
+           <v-icon>{{ userAction.icon }}</v-icon>
+         </v-list-tile-action>
+
+         <v-list-tile-content>
+           <v-list-tile-title>{{ userAction.title }}</v-list-tile-title>
+         </v-list-tile-content>
+       </v-list-tile>
+
      </v-list>
 
    </v-navigation-drawer>
@@ -84,12 +89,17 @@ export default {
         // { title: 'New Folder', icon: 'create_new_folder' },
         // { title: 'New File', icon: 'cloud_upload' }
       ],
-      cruds: [
-        ['New Folder', 'add'],
-        ['New File', 'insert_drive_file'] //,
-        // ['Update', 'update'],
-        // ['Delete', 'delete']
+      userActions: [
+        { title: 'My Projects', icon: 'folder' },
+        { title: 'New Folder', icon: 'create_new_folder' },
+        { title: 'New File', icon: 'cloud_upload' }
       ],
+      // cruds: [
+      //   ['New Folder', 'add'],
+      //   ['New File', 'insert_drive_file'] //,
+      //   // ['Update', 'update'],
+      //   // ['Delete', 'delete']
+      // ],
       mini: true,
       right: null
     }

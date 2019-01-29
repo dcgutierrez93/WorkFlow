@@ -6,6 +6,9 @@ import VueRouter from 'vue-router'
 import router from './router'
 // import VModal from 'vue-js-modal'
 import axios from 'axios'
+// Vuelidate
+import Vuelidate from 'vuelidate'
+Vue.use(Vuelidate)
 
 // Vue.use(VModal)
 import './registerServiceWorker'
